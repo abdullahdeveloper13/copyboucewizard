@@ -15,78 +15,42 @@ const DEFAULT_TEXT = 'mazisi'
 const FONT_METRIC_SAMPLE = 'MpgyÁáÉéÍíÓóÚúÑñÜü'
 
 const DEFAULT_MODULES = [
-  {
-    id: '8c21ab9b-94c5-493a-a5cb-fdc4983f58e1',
-    name: 'Street Warrior 7 - Blue',
-    code: 'SW-7-BLUE',
-    lengthMm: 66,
-    widthMm: 15,
-  },
-  {
-    id: '44ce6880-20d4-40f9-8fe9-4ba4242cb08a',
-    name: 'Street Warrior 7 - Green',
-    code: 'SW-7-GREEN',
-    lengthMm: 66,
-    widthMm: 15,
-  },
-  {
-    id: 'ebeb1dbe-46ed-461f-abe3-4b32e8ae280a',
-    name: 'Street Warrior 7 - Red',
-    code: 'SW-7-RED',
-    lengthMm: 66,
-    widthMm: 15,
-  },
-  {
-    id: '6afe5f77-0fe4-45bc-b9a1-dbba51d3ccf4',
-    name: 'Street Warrior 7 - Warm White',
-    code: 'SW-7-WW',
-    lengthMm: 66,
-    widthMm: 15,
-  },
-  {
-    id: '65d653e5-d60a-40aa-82bf-22520e205809',
-    name: 'Street Warrior 7',
-    code: 'SW-7',
-    lengthMm: 66,
-    widthMm: 15,
-  },
-  {
-    id: 'f81f0d53-fee6-4f03-8336-111e9944070b',
-    name: 'Street Warrior 5 - 6500K',
-    code: 'SW-V-6500k',
-    lengthMm: 70,
-    widthMm: 16,
-  },
-  {
-    id: '52e99bd2-3290-424b-9c69-fca6eaf4bdc1',
-    name: 'Street Warrior 5',
-    code: 'SW-V',
-    lengthMm: 70,
-    widthMm: 16,
-  },
-  {
-    id: '2812d92e-696b-4e8e-9092-92d79cdb5775',
-    name: 'Street Warrior 3',
-    code: 'SW-III',
-    lengthMm: 66,
-    widthMm: 15.5,
-  },
-  {
-    id: '0dfc0cd5-095b-46c2-abb3-b270ace80658',
-    name: 'Street Warrior 4',
-    code: 'SW-4',
-    lengthMm: 78,
-    widthMm: 15.5,
-  },
+  { id: 'sw-iii', name: 'Street Warrior 3', code: 'SW-III', lengthMm: 66, widthMm: 15.5, heightMm: 9.4, pitchMm: 85, lensCount: 3, maxModules: 20 },
+  { id: 'sw-iv-3cw', name: 'Street Warrior 4', code: 'SW-IV-3CW', lengthMm: 78, widthMm: 15.5, heightMm: 5.6, pitchMm: 100, lensCount: 3, maxModules: 20 },
+  { id: 'sw-iv-3b', name: 'Street Warrior 4 Blue', code: 'SW-IV-3B', lengthMm: 78, widthMm: 15.5, heightMm: 5.6, pitchMm: 100, lensCount: 3, maxModules: 20 },
+  { id: 'sw-iv-3g', name: 'Street Warrior 4 Green', code: 'SW-IV-3G', lengthMm: 78, widthMm: 15.5, heightMm: 5.6, pitchMm: 100, lensCount: 3, maxModules: 20 },
+  { id: 'sw-iv-3r', name: 'Street Warrior 4 Red', code: 'SW-IV-3R', lengthMm: 78, widthMm: 15.5, heightMm: 5.6, pitchMm: 100, lensCount: 3, maxModules: 20 },
+  { id: 'sw-v', name: 'Street Warrior 5', code: 'SW-V', lengthMm: 70, widthMm: 16, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-v-6500', name: 'Street Warrior 5 - 6500K', code: 'SW-V-6500', lengthMm: 70, widthMm: 16, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-jss2-3', name: 'SW-JSS2-3 Japanese Type', code: 'SW-JSS2-3', lengthMm: 58, widthMm: 10, heightMm: 5.6, pitchMm: 75, lensCount: 3, maxModules: 20 },
+  { id: 'sw-7-170', name: 'Street Warrior 7 - 170', code: 'SW-7-170', lengthMm: 66, widthMm: 15, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-7', name: 'Street Warrior 7 - 160', code: 'SW-7', lengthMm: 66, widthMm: 15, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-7-ww', name: 'Street Warrior 7 - Warm White', code: 'SW-7-WW', lengthMm: 66, widthMm: 15, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-7-blue', name: 'Street Warrior 7 - Blue', code: 'SW-7-BLUE', lengthMm: 66, widthMm: 15, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-7-green', name: 'Street Warrior 7 - Green', code: 'SW-7-GREEN', lengthMm: 66, widthMm: 15, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-7-red', name: 'Street Warrior 7 - Red', code: 'SW-7-RED', lengthMm: 66, widthMm: 15, heightMm: 10.5, pitchMm: 80, lensCount: 3, maxModules: 20 },
+  { id: 'sw-eco-cw', name: 'SW-ECO-CW', code: 'SW-ECO-CW', lengthMm: 60, widthMm: 13, heightMm: 5, pitchMm: 65, lensCount: 3, maxModules: 20 },
+  { id: 'sw-eco-120-acr', name: 'SW-ECO-120-ACR ST2 6.0', code: 'SW-ECO-120-ACR', lengthMm: 68, widthMm: 14, heightMm: 5.6, pitchMm: 105, lensCount: 3, maxModules: 20 },
+  { id: 'sw-eco-red', name: 'SW-ECO-RED', code: 'SW-ECO-RED', lengthMm: 85, widthMm: 17, heightMm: 6.5, pitchMm: 70, lensCount: 3, maxModules: 20 },
+  { id: 'kol-1c-cw', name: 'KOL-1C-CW Mini 3 Eyed DKI', code: 'KOL-1C-CW', lengthMm: 31, widthMm: 7, heightMm: 5, pitchMm: 50, lensCount: 3, maxModules: 50 },
+  { id: 'kol-1c-ww', name: 'KOL-1C-WW Mini 3 Eyed DKI', code: 'KOL-1C-WW', lengthMm: 31, widthMm: 7, heightMm: 5, pitchMm: 50, lensCount: 3, maxModules: 50 },
+  { id: 'neo-lw-w', name: 'NEO-LW-W Mini Frosted', code: 'NEO-LW-W', lengthMm: 26.5, widthMm: 9, heightMm: 7.8, pitchMm: 50, lensCount: 1, maxModules: 50 },
+  { id: 'ss-mkdl-6k', name: 'SS-MKDL-6K 2 Eyed', code: 'SS-MKDL-6K', lengthMm: 27, widthMm: 8, heightMm: 5.2, pitchMm: 35, lensCount: 2, maxModules: 50 },
 ]
 
-function formatModuleLabel(module) {
+function formatModuleLabelLegacy(module) {
   return `${module.name}${module.code ? ` (${module.code})` : ''} — ${module.lengthMm} x ${module.widthMm} mm`
+}
+
+void formatModuleLabelLegacy
+
+function formatModuleLabel(module) {
+  return `${module.name}${module.code ? ` (${module.code})` : ''} - ${module.lengthMm} x ${module.widthMm} x ${module.heightMm} mm, max ${module.maxModules}`
 }
 
 function drawModuleShape(ctx, length, width, module) {
   if (module?.ledIcon === 'street-warrior-3-lens' || module?.code?.startsWith('SW-')) {
-    drawStreetWarriorModule(ctx, length, width)
+    drawStreetWarriorModule(ctx, length, width, module)
     return
   }
   if (module?.svgPathData) {
@@ -136,19 +100,21 @@ function drawModuleShape(ctx, length, width, module) {
 // Vector reconstruction of the three-lens Street Warrior LED module in the
 // supplied reference image.  It is drawn from paths/circles instead of a bitmap,
 // so it remains crisp at every zoom level and when the module is rotated.
-function drawStreetWarriorModule(ctx, length, width) {
+function drawStreetWarriorModule(ctx, length, width, module) {
   const drawL = Math.max(2, length)
   const drawWd = Math.max(2, width)
   const stroke = Math.max(0.55, Math.min(1.45, drawWd * 0.075))
-  const bodyL = drawL * 0.84
-  const bodyW = drawWd * 0.8
+  const lensCount = Math.max(1, Math.min(3, Math.round(module?.lensCount || 3)))
+  const bodyL = drawL * (lensCount === 1 ? 0.74 : 0.84)
+  const bodyW = drawWd * (lensCount === 1 ? 0.86 : 0.8)
   const bodyX = -bodyL / 2
   const bodyY = -bodyW / 2
-  const lensRadius = Math.max(1.1, Math.min(bodyW * 0.2, bodyL * 0.075))
-  const lensGap = bodyL * 0.245
+  const lensRadius = Math.max(0.9, Math.min(bodyW * (lensCount === 1 ? 0.28 : 0.2), bodyL * 0.075))
+  const lensGap = lensCount > 1 ? bodyL * (lensCount === 2 ? 0.22 : 0.245) : 0
   const terminalW = Math.max(0.75, drawL * 0.035)
   const terminalH = bodyW * 0.44
   const terminalY = -terminalH / 2
+  const lensXs = lensCount === 1 ? [0] : lensCount === 2 ? [-lensGap, lensGap] : [-lensGap, 0, lensGap]
 
   ctx.save()
   ctx.lineJoin = 'round'
@@ -177,8 +143,7 @@ function drawStreetWarriorModule(ctx, length, width) {
   ctx.lineWidth = Math.max(0.35, stroke * 0.45)
   ctx.stroke()
 
-  // Three circular LED lenses.
-  for (const x of [-lensGap, 0, lensGap]) {
+  for (const x of lensXs) {
     ctx.beginPath()
     ctx.arc(x, 0, lensRadius, 0, Math.PI * 2)
     ctx.fillStyle = '#eef1f4'
@@ -663,29 +628,71 @@ function splitAtCorners(pts, winPx) {
 }
 
 function effectiveClearance(clearance) {
-  return Math.max(1, clearance * 0.55)
+  return Math.max(2, clearance * 0.9)
+}
+
+function angleDiff(a, b) {
+  let d = a - b
+  while (d > Math.PI) d -= Math.PI * 2
+  while (d < -Math.PI) d += Math.PI * 2
+  return d
+}
+
+function sampleDistance(dist, W, H, x, y) {
+  const x0 = Math.floor(x)
+  const y0 = Math.floor(y)
+  if (x0 < 0 || y0 < 0 || x0 >= W - 1 || y0 >= H - 1) {
+    const xi = Math.round(x)
+    const yi = Math.round(y)
+    if (xi < 0 || yi < 0 || xi >= W || yi >= H) return 0
+    return dist[yi * W + xi]
+  }
+  const fx = x - x0
+  const fy = y - y0
+  const d00 = dist[y0 * W + x0]
+  const d10 = dist[y0 * W + x0 + 1]
+  const d01 = dist[(y0 + 1) * W + x0]
+  const d11 = dist[(y0 + 1) * W + x0 + 1]
+  return d00 * (1 - fx) * (1 - fy) + d10 * fx * (1 - fy) + d01 * (1 - fx) * fy + d11 * fx * fy
+}
+
+function localCenterlineAngle(sd, x, y, fallback = 0) {
+  const gx = (sd(x + 1, y) - sd(x - 1, y)) / 2
+  const gy = (sd(x, y + 1) - sd(x, y - 1)) / 2
+  return Math.hypot(gx, gy) > 0.001 ? Math.atan2(gy, gx) + Math.PI / 2 : fallback
+}
+
+function refineCenterlinePoint(sd, x, y, tangent, maxStep) {
+  let px = x
+  let py = y
+  const nx = -Math.sin(tangent)
+  const ny = Math.cos(tangent)
+  const step = Math.max(0.4, Math.min(1.5, maxStep / 8))
+
+  for (let iter = 0; iter < 8; iter++) {
+    let bestOffset = 0
+    let bestD = sd(px, py)
+    for (const dir of [-1, 1]) {
+      const offset = dir * step
+      const d = sd(px + nx * offset, py + ny * offset)
+      if (d > bestD) {
+        bestD = d
+        bestOffset = offset
+      }
+    }
+    if (bestOffset === 0) break
+    px += nx * bestOffset
+    py += ny * bestOffset
+  }
+
+  const refinedAngle = localCenterlineAngle(sd, px, py, tangent)
+  return { x: px, y: py, ang: tangent + angleDiff(refinedAngle, tangent) * 0.45 }
 }
 
 function placeRuns(branches, dist, W, H, pitch, clearance, Wd, single, mlen) {
   const edgeClearance = effectiveClearance(clearance)
   const setback = edgeClearance + Wd / 2
-  const sd = (x, y) => {
-    const x0 = Math.floor(x)
-    const y0 = Math.floor(y)
-    if (x0 < 0 || y0 < 0 || x0 >= W - 1 || y0 >= H - 1) {
-      const xi = Math.round(x)
-      const yi = Math.round(y)
-      if (xi < 0 || yi < 0 || xi >= W || yi >= H) return 0
-      return dist[yi * W + xi]
-    }
-    const fx = x - x0
-    const fy = y - y0
-    const d00 = dist[y0 * W + x0]
-    const d10 = dist[y0 * W + x0 + 1]
-    const d01 = dist[(y0 + 1) * W + x0]
-    const d11 = dist[(y0 + 1) * W + x0 + 1]
-    return d00 * (1 - fx) * (1 - fy) + d10 * fx * (1 - fy) + d01 * (1 - fx) * fy + d11 * fx * fy
-  }
+  const sd = (x, y) => sampleDistance(dist, W, H, x, y)
 
   const mods = []
   const cell = pitch * 0.7
@@ -723,7 +730,7 @@ function placeRuns(branches, dist, W, H, pitch, clearance, Wd, single, mlen) {
     mods.push({ x, y, ang })
   }
 
-  const footprintInside = (mx, my, ang) => !moduleOut({ x: mx, y: my, ang }, mlen, Wd, sd, 1.0)
+  const footprintInside = (mx, my, ang) => !moduleOut({ x: mx, y: my, ang }, mlen, Wd, sd, edgeClearance)
 
   for (const B of branches) {
     const isSpur = (B.dStart >= 3) !== (B.dEnd >= 3)
@@ -734,7 +741,7 @@ function placeRuns(branches, dist, W, H, pitch, clearance, Wd, single, mlen) {
     if (isSpur && blen < mlen * 0.65) continue
 
     const smoothed = smoothOpen(B.pts, 12)
-    const path = smoothPath(smoothed, 6)
+    const path = smoothPath(smoothed, 10)
     if (path.length < 3) continue
 
     let totalLen = 0
@@ -756,45 +763,50 @@ function placeRuns(branches, dist, W, H, pitch, clearance, Wd, single, mlen) {
     const startSkip = Math.min(edgeClearance + mlen * 0.5, totalLen * 0.3)
     const endSkip = Math.min(edgeClearance + mlen * 0.5, totalLen * 0.3)
 
-    let acc = 0
-    let station = startSkip
+    const runLen = Math.max(0, totalLen - startSkip - endSkip)
+    const count = Math.max(1, Math.floor((runLen + pitch * 0.28) / pitch))
+    const runPitch = count > 1 ? runLen / (count - 1) : 0
 
-    for (let i = 0; i < segs.length && station <= totalLen - endSkip; i++) {
+    let acc = 0
+    let stationIndex = 0
+    for (let i = 0; i < segs.length && stationIndex < count; i++) {
       const seg = segs[i]
-      while (station <= acc + seg.len && station <= totalLen - endSkip) {
+      while (stationIndex < count) {
+        const station = count === 1 ? totalLen / 2 : startSkip + runPitch * stationIndex
+        if (station > acc + seg.len) break
+        if (station < acc) {
+          stationIndex++
+          continue
+        }
         const t = (station - acc) / seg.len
         const px = seg.ax + seg.dx * t
         const py = seg.ay + seg.dy * t
-
-        const gx = (sd(px + 1, py) - sd(px - 1, py)) / 2
-        const gy = (sd(px, py + 1) - sd(px, py - 1)) / 2
-        let ang = Math.atan2(gy, gx) + Math.PI / 2
-        if (ang < 0) ang += Math.PI
+        const tangent = Math.atan2(seg.dy, seg.dx)
+        const refined = refineCenterlinePoint(sd, px, py, tangent, Math.max(Wd, edgeClearance))
+        const { x, y, ang } = refined
 
         if (single) {
-          if (sd(px, py) > setback && !near(px, py) && footprintInside(px, py, ang)) {
-            add(px, py, ang)
+          if (sd(x, y) > setback && !near(x, y) && footprintInside(x, y, ang)) {
+            add(x, y, ang)
           }
         } else {
           const acrossPitch = Wd + edgeClearance
-          const avail = Math.sqrt(sd(px, py)) * 2 - 2 * setback
-          const lanes = avail > acrossPitch * 1.5 ? 2 : 1
-          const runPitch = lanes > 1 ? acrossPitch : 0
-          const ck = 0.5
+          const avail = sd(x, y) * 2 - 2 * setback
+          const lanes = Math.max(1, Math.min(3, Math.floor(avail / acrossPitch) + 1))
+          const lanePitch = lanes > 1 ? acrossPitch : 0
           const nx = -Math.sin(ang)
           const ny = Math.cos(ang)
 
           for (let k = 0; k < lanes; k++) {
-            const off = (k - ck) * runPitch
-            const mx = px + nx * off
-            const my = py + ny * off
-            if (runPitch > 0 && Math.abs(off) < runPitch * 0.5) continue
-            if (sd(mx, my) >= (setback + 2.5) ** 2 && footprintInside(mx, my, ang)) {
+            const off = (k - (lanes - 1) / 2) * lanePitch
+            const mx = x + nx * off
+            const my = y + ny * off
+            if (sd(mx, my) >= setback + 1.5 && footprintInside(mx, my, ang)) {
               add(mx, my, ang)
             }
           }
         }
-        station += pitch * 0.5
+        stationIndex++
       }
       acc += seg.len
     }
@@ -819,125 +831,6 @@ function smoothPath(poly, iter) {
   return p
 }
 
-function fillInterior(mods, dist, W, H, pitch, clearance, L, Wd) {
-  const edgeClearance = effectiveClearance(clearance)
-  const setback = edgeClearance + Wd / 2
-  const edgeMarginPx = edgeClearance
-  const fillStep = Math.max(Wd + clearance, Math.min(pitch, L) * 0.55)
-  const cell = Math.max(6, fillStep * 0.72)
-  const grid = new Map()
-
-  const sd = (x, y) => {
-    const x0 = Math.floor(x)
-    const y0 = Math.floor(y)
-    if (x0 < 0 || y0 < 0 || x0 >= W - 1 || y0 >= H - 1) {
-      const xi = Math.round(x)
-      const yi = Math.round(y)
-      if (xi < 0 || yi < 0 || xi >= W || yi >= H) return 0
-      return dist[yi * W + xi]
-    }
-    const fx = x - x0
-    const fy = y - y0
-    const d00 = dist[y0 * W + x0]
-    const d10 = dist[y0 * W + x0 + 1]
-    const d01 = dist[(y0 + 1) * W + x0]
-    const d11 = dist[(y0 + 1) * W + x0 + 1]
-    return (
-      d00 * (1 - fx) * (1 - fy) +
-      d10 * fx * (1 - fy) +
-      d01 * (1 - fx) * fy +
-      d11 * fx * fy
-    )
-  }
-
-  const near = (x, y) => {
-    const gx = Math.floor(x / cell)
-    const gy = Math.floor(y / cell)
-    const r2 = (fillStep * 0.58) * (fillStep * 0.58)
-    for (let a = -1; a <= 1; a++) {
-      for (let b = -1; b <= 1; b++) {
-        const arr = grid.get(`${gx + a}_${gy + b}`)
-        if (!arr) continue
-        for (const m of arr) {
-          if ((m[0] - x) ** 2 + (m[1] - y) ** 2 < r2) return true
-        }
-      }
-    }
-    return false
-  }
-
-  const add = (x, y, ang) => {
-    if (near(x, y)) return false
-    if (moduleOut({ x, y, ang }, L, Wd, sd, 1.0)) return false
-    const k = `${Math.floor(x / cell)}_${Math.floor(y / cell)}`
-    let arr = grid.get(k)
-    if (!arr) {
-      arr = []
-      grid.set(k, arr)
-    }
-    arr.push([x, y])
-    mods.push({ x, y, ang })
-    return true
-  }
-
-  const footprintScore = (mx, my, ang) => {
-    const c = Math.cos(ang)
-    const s = Math.sin(ang)
-    const hl = L / 2
-    const hw = Wd / 2
-    const probes = [
-      [hl, hw],
-      [hl, -hw],
-      [-hl, hw],
-      [-hl, -hw],
-      [hl, 0],
-      [-hl, 0],
-      [0, hw],
-      [0, -hw],
-    ]
-    let minD = Infinity
-    for (const [a, b] of probes) {
-      const X = mx + c * a - s * b
-      const Y = my + s * a + c * b
-      const d = sd(X, Y)
-      if (d < minD) minD = d
-      if (minD < edgeMarginPx * edgeMarginPx) return minD
-    }
-    return minD
-  }
-
-  const candidateAngles = (x, y) => {
-    const gx = sd(x + 1, y) - sd(x - 1, y)
-    const gy = sd(x, y + 1) - sd(x, y - 1)
-    const mag = Math.hypot(gx, gy)
-    const base = mag > 0.001 ? Math.atan2(gy, gx) + Math.PI / 2 : 0
-    return [base, base + Math.PI / 2, 0, Math.PI / 2]
-  }
-
-  for (let pass = 0; pass < 2; pass++) {
-    const yShift = pass ? fillStep * 0.5 : 0
-    for (let y = yShift + fillStep * 0.5; y < H - fillStep * 0.5; y += fillStep) {
-      const xOffset = pass ? fillStep * 0.5 : 0
-      for (let x = xOffset + fillStep * 0.5; x < W - fillStep * 0.5; x += fillStep) {
-        if (sd(x, y) < setback) continue
-        if (near(x, y)) continue
-        let bestAng = 0
-        let bestScore = -Infinity
-        for (const ang of candidateAngles(x, y)) {
-          const score = footprintScore(x, y, ang)
-          if (score > bestScore) {
-            bestScore = score
-            bestAng = ang
-          }
-        }
-        if (bestScore >= edgeMarginPx * edgeMarginPx) add(x, y, bestAng)
-      }
-    }
-  }
-
-  return mods
-}
-
 function measureLetterBounds(ctx, text) {
   const chars = Array.from(text)
   const advances = measureLetterAdvances(ctx, text)
@@ -958,7 +851,7 @@ function measureLetterAdvances(ctx, text) {
   return advances
 }
 
-function buildLetterLocalModules({ ctx, font, px, char, pad, mode, spacing, clearance, mlen, moduleWidth }) {
+function buildLetterLocalModules({ ctx, font, px, char, pad, mode, spacing, clearance, mlen, moduleWidth, maxModules }) {
   const charWidth = Math.max(1, Math.ceil(ctx.measureText(char).width))
   const W = charWidth + pad * 2
   const localX0 = pad
@@ -991,9 +884,6 @@ function buildLetterLocalModules({ ctx, font, px, char, pad, mode, spacing, clea
   const Wd = moduleWidth
   const setback = clearance + Wd / 2
   const mods = placeRuns(branches, dist, W, H, spacing, clearance, Wd, mode === 'single', mlen)
-  if (mode === 'fill') {
-    fillInterior(mods, dist, W, H, spacing, clearance, mlen, Wd)
-  }
 
   const { lab, comps } = labelComponents(ink, dist, W, H)
   const covered = new Set()
@@ -1030,36 +920,41 @@ function buildLetterLocalModules({ ctx, font, px, char, pad, mode, spacing, clea
     if (c.maxV >= setback * 0.25 && c.count >= 8) {
       const ang = (c.maxx - c.minx) >= (c.maxy - c.miny) ? 0 : Math.PI / 2
       const m = { x: c.mx, y: c.my, ang }
-      if (!moduleOut(m, L, Wd, sdist, 1.0)) {
+      if (!moduleOut(m, L, Wd, sdist, Math.max(2, clearance * 0.8, Wd * 0.18))) {
         mods.push(m)
       }
     }
   }
 
-  const spacingGap = Math.max(4, clearance * 0.7, spacing * 0.22)
+  const spacingGap = Math.max(4, clearance * 0.8, spacing * 0.18)
   const spacedMods = filterPlacements(mods, L, Wd, spacingGap, sdist)
   let over = 0
   const localMods = []
   // Final defensive check: discard a placement if any corner reaches the
   // letter edge, even if it came from a small-shape rescue pass.
-  const outThreshold = 1.0
+  const outThreshold = Math.max(3, clearance, Wd * 0.24)
   for (const mm of spacedMods) {
     const isOut = moduleOut(mm, L, Wd, sdist, outThreshold)
     if (isOut) {
-      over++
       continue
     }
     localMods.push({ x: mm.x, y: mm.y, ang: mm.ang, overhang: false })
   }
 
   const minModules = estimateMinimumModules({ width: W, height: H }, mlen)
-  if (localMods.length < minModules) {
-    topUpLetterModules(localMods, dist, W, H, minModules, L, Wd, clearance, spacing)
+  const adaptiveTarget = Math.round(charWidth / Math.max(mlen * 0.55, 1))
+  const targetModules = mode === 'fill' && Number.isFinite(maxModules)
+    ? Math.min(Math.floor(maxModules), Math.max(minModules, adaptiveTarget))
+    : minModules
+  if (localMods.length < targetModules) {
+    topUpLetterModules(localMods, dist, W, H, targetModules, L, Wd, clearance, spacing)
   }
 
-  const localWireRuns = buildLocalWireRuns(localMods, branches, spacing, mlen, clearance)
+  const safeMods = filterPlacements(localMods, L, Wd, Math.max(spacingGap, outThreshold), sdist)
+  const cappedMods = limitLetterModules(safeMods, maxModules)
+  const localWireRuns = buildLocalWireRuns(cappedMods, branches, spacing, mlen, clearance, maxModules)
 
-  return { localMods, localWireRuns, over, baseY }
+  return { localMods: cappedMods, localWireRuns, over, baseY }
 }
 
 const letterLocalCache = new Map()
@@ -1074,6 +969,7 @@ function getLetterLocalModules(options) {
     options.clearance,
     options.mlen,
     options.moduleWidth,
+    options.maxModules,
   ].join('|')
   if (letterLocalCache.has(key)) return letterLocalCache.get(key)
 
@@ -1092,7 +988,6 @@ function moduleOut(mm, L, Wd, sdist, threshold = 1.5) {
   const hl = L / 2
   const hw = Wd / 2
   const steps = 6
-  const thresh2 = threshold * threshold
   for (let i = 0; i <= steps; i++) {
     const t = (i / steps) * 2 - 1
     const topX = mm.x + c * hl * t - s * hw
@@ -1103,10 +998,10 @@ function moduleOut(mm, L, Wd, sdist, threshold = 1.5) {
     const leftY = mm.y - s * hl + c * hw * t
     const rightX = mm.x + c * hl - s * hw * t
     const rightY = mm.y + s * hl - c * hw * t
-    if (sdist(topX, topY) < thresh2) return true
-    if (sdist(botX, botY) < thresh2) return true
-    if (sdist(leftX, leftY) < thresh2) return true
-    if (sdist(rightX, rightY) < thresh2) return true
+    if (sdist(topX, topY) < threshold) return true
+    if (sdist(botX, botY) < threshold) return true
+    if (sdist(leftX, leftY) < threshold) return true
+    if (sdist(rightX, rightY) < threshold) return true
   }
   return false
 }
@@ -1121,15 +1016,20 @@ function filterPlacements(mods, L, Wd, gapPx, sdist) {
   for (const m of mods) {
     const gx = Math.floor(m.x / cell)
     const gy = Math.floor(m.y / cell)
+    const corners = rectCorners(m.x, m.y, m.ang, L + pad, Wd + pad)
     let collide = false
     for (let a = -1; a <= 1 && !collide; a++) {
       for (let b = -1; b <= 1; b++) {
         const arr = grid.get(`${gx + a}_${gy + b}`)
         if (!arr) continue
         for (const p of arr) {
-          const dx = p.x - m.x
-          const dy = p.y - m.y
+          const dx = p.mod.x - m.x
+          const dy = p.mod.y - m.y
           if (dx * dx + dy * dy < radius2) {
+            collide = true
+            break
+          }
+          if (satOverlap(corners, p.corners)) {
             collide = true
             break
           }
@@ -1137,17 +1037,91 @@ function filterPlacements(mods, L, Wd, gapPx, sdist) {
         if (collide) break
       }
     }
-    if (!collide && (!sdist || !moduleOut(m, L, Wd, sdist, 1.0))) {
+    if (!collide && (!sdist || !moduleOut(m, L, Wd, sdist, Math.max(2, gapPx * 0.45, Wd * 0.16)))) {
       kept.push(m)
       let arr = grid.get(`${gx}_${gy}`)
       if (!arr) {
         arr = []
         grid.set(`${gx}_${gy}`, arr)
       }
-      arr.push(m)
+      arr.push({ mod: m, corners })
     }
   }
   return kept
+}
+
+function rectCorners(x, y, ang, L, Wd) {
+  const c = Math.cos(ang)
+  const s = Math.sin(ang)
+  const hl = L / 2
+  const hw = Wd / 2
+  return [
+    [-hl, -hw],
+    [hl, -hw],
+    [hl, hw],
+    [-hl, hw],
+  ].map(([a, b]) => [
+    x + c * a - s * b,
+    y + s * a + c * b,
+  ])
+}
+
+function satOverlap(a, b) {
+  for (const poly of [a, b]) {
+    for (let i = 0; i < poly.length; i++) {
+      const p1 = poly[i]
+      const p2 = poly[(i + 1) % poly.length]
+      const nx = -(p2[1] - p1[1])
+      const ny = p2[0] - p1[0]
+      let minA = Infinity
+      let maxA = -Infinity
+      let minB = Infinity
+      let maxB = -Infinity
+      for (const p of a) {
+        const d = p[0] * nx + p[1] * ny
+        if (d < minA) minA = d
+        if (d > maxA) maxA = d
+      }
+      for (const p of b) {
+        const d = p[0] * nx + p[1] * ny
+        if (d < minB) minB = d
+        if (d > maxB) maxB = d
+      }
+      if (maxA < minB || maxB < minA) return false
+    }
+  }
+  return true
+}
+
+function limitLetterModules(mods, maxModules) {
+  if (!Number.isFinite(maxModules) || maxModules <= 0 || mods.length <= maxModules) {
+    return mods
+  }
+
+  const limit = Math.max(1, Math.floor(maxModules))
+  const ranked = mods
+    .map((mod, index) => ({
+      mod,
+      index,
+      spreadKey: mod.x + mod.y * 0.18,
+    }))
+    .sort((a, b) => a.spreadKey - b.spreadKey || a.index - b.index)
+
+  const selected = []
+  const used = new Set()
+  for (let i = 0; i < limit; i++) {
+    const raw = limit === 1 ? (ranked.length - 1) / 2 : (i * (ranked.length - 1)) / (limit - 1)
+    let idx = Math.round(raw)
+    while (used.has(idx) && idx < ranked.length - 1) idx++
+    while (used.has(idx) && idx > 0) idx--
+    if (used.has(idx)) continue
+    used.add(idx)
+    selected.push(ranked[idx])
+  }
+
+  return selected
+    .sort((a, b) => a.index - b.index)
+    .map((entry) => entry.mod)
 }
 
 function polylineLength(pts) {
@@ -1191,7 +1165,20 @@ function projectPointToPolyline(pt, poly) {
   return best
 }
 
-function buildLocalWireRuns(localMods, branches, spacing, mlen, clearance) {
+function chunkWireRuns(runs, maxModules) {
+  if (!Number.isFinite(maxModules) || maxModules <= 0) return runs
+  const limit = Math.max(1, Math.floor(maxModules))
+  const out = []
+  for (const run of runs) {
+    for (let i = 0; i < run.length; i += limit) {
+      const chunk = run.slice(i, i + limit)
+      if (chunk.length >= 2) out.push(chunk)
+    }
+  }
+  return out
+}
+
+function buildLocalWireRuns(localMods, branches, spacing, mlen, clearance, maxModules) {
   if (localMods.length < 2 || branches.length === 0) return []
 
   const guideSegments = []
@@ -1254,7 +1241,7 @@ function buildLocalWireRuns(localMods, branches, spacing, mlen, clearance) {
     runs.push(...buildWireChains(leftovers, Math.max(spacing * 2.8, mlen * 1.2)))
   }
 
-  return runs
+  return chunkWireRuns(runs, maxModules)
 }
 
 function segmentLength(a, b) {
@@ -1472,7 +1459,7 @@ function topUpLetterModules(mods, dist, W, H, targetCount, L, Wd, clearance, spa
     const d11 = dist[(y0 + 1) * W + x0 + 1]
     return d00 * (1 - fx) * (1 - fy) + d10 * fx * (1 - fy) + d01 * (1 - fx) * fy + d11 * fx * fy
   }
-  const gap = 1.0
+  const gap = Math.max(2, clearance * 0.75, Wd * 0.16)
   const cell = Math.max(6, Math.min(spacing, L) * 0.65)
   const grid = new Map()
   const addGrid = (m) => {
@@ -1599,6 +1586,8 @@ export default function App() {
   )
   const moduleLengthMm = selectedModule.lengthMm
   const moduleWidthMm = selectedModule.widthMm
+  const moduleHeightMm = selectedModule.heightMm
+  const modulePitchMm = selectedModule.pitchMm
   const [count, setCount] = useState(0)
   const [board, setBoard] = useState('0 x 0')
   const [over, setOver] = useState(0)
@@ -1757,7 +1746,7 @@ export default function App() {
         done()
       }
     })
-    const { text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, mlen, moduleWidthMm } = params
+    const { text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, mlen, moduleWidthMm, modulePitchMm } = params
 
     const font = FONTS[fontIdx]
     if (!text.trim()) {
@@ -1806,8 +1795,10 @@ export default function App() {
     const moduleDisplayScale = Math.max(0.2, Math.min(1, moduleScale / 100))
     const displayModuleLength = mlen * moduleDisplayScale
     const displayModuleWidth = moduleWidthMm * moduleDisplayScale
+    const displayModulePitch = (modulePitchMm || mlen) * moduleDisplayScale
     const spacingScaled = Math.max(10, Math.round(spacing * (0.88 + depthScale * 0.12)))
-    const clearanceScaled = Math.max(1, clearance * depthScale * (mode === 'fill' ? 0.45 : 1))
+    const modulePitch = Math.max(displayModulePitch * 0.75, displayModuleLength * 0.86, displayModuleWidth * 1.45, spacingScaled)
+    const clearanceScaled = Math.max(2.5, clearance * depthScale * 0.8, displayModuleWidth * 0.24)
 
     mask.width = W
     mask.height = H
@@ -1833,10 +1824,11 @@ export default function App() {
     char,
     pad,
     mode,
-    spacing: spacingScaled,
+    spacing: modulePitch,
     clearance: clearanceScaled,
     mlen: displayModuleLength,
     moduleWidth: displayModuleWidth,
+    maxModules: selectedModule.maxModules,
   }))
     }
 
@@ -2023,8 +2015,8 @@ export default function App() {
 
   useEffect(() => {
     const seq = ++renderSeqRef.current
-    void render(seq, { text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, mlen: moduleLengthMm, moduleWidthMm })
-  }, [render, text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, moduleLengthMm, moduleWidthMm])
+    void render(seq, { text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, mlen: moduleLengthMm, moduleWidthMm, modulePitchMm })
+  }, [render, text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, moduleLengthMm, moduleWidthMm, modulePitchMm])
 
   const handleGenerate = () => {
     setGenerating(true)
@@ -2032,7 +2024,7 @@ export default function App() {
     setActiveWireModule(null)
     setHoveredModule(null)
     const seq = ++renderSeqRef.current
-    void render(seq, { text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, mlen: moduleLengthMm, moduleWidthMm }).finally(() => setGenerating(false))
+    void render(seq, { text, fontIdx, mode, size, depth, moduleScale, spacing, clearance, mlen: moduleLengthMm, moduleWidthMm, modulePitchMm }).finally(() => setGenerating(false))
   }
 
   return (
@@ -2166,7 +2158,13 @@ export default function App() {
               Board <strong>{board}</strong>
             </span>
             <span>
-              Module <strong>{moduleLengthMm} x {moduleWidthMm} mm</strong>
+              Module <strong>{moduleLengthMm} x {moduleWidthMm} x {moduleHeightMm} mm</strong>
+            </span>
+            <span>
+              Pitch <strong>{modulePitchMm || '-' } mm</strong>
+            </span>
+            <span>
+              Max/string <strong>{selectedModule.maxModules || '-'}</strong>
             </span>
             <span>
               Display <strong>{moduleScale}%</strong>
